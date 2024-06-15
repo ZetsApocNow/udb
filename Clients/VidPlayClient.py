@@ -120,7 +120,7 @@ class VidPlayClient(BaseClient):
             subtitles = { subtitle.get("label"): subtitle.get("file") for subtitle in resp }
 
         except Exception as e:
-            self.logger.warning('Failed to fetch subtitles or no subtitles found')
+            self.logger.warning('')
 
         self.logger.debug(f'Available subtitles: {subtitles}')
         return subtitles
